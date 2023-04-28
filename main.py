@@ -13,7 +13,7 @@ from flask_login import UserMixin, login_user, LoginManager, login_required, log
 from forms import CreatePostForm, RegForm, LoginForm, CommentForm
 from flask_gravatar import Gravatar
 
-load_dotenv()
+# load_dotenv()
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.getenv("APP_SECRET_KEY")
 ckeditor = CKEditor(app)
